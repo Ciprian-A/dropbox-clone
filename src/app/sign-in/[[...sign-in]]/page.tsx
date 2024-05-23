@@ -1,5 +1,9 @@
-import {SignIn} from '@clerk/nextjs'
+import {SignedIn, UserButton} from '@clerk/nextjs'
 
 export default function Page() {
-	return <SignIn path='sign-in' />
+	return (
+		<SignedIn>
+			<UserButton />
+		</SignedIn>
+	)
 }
